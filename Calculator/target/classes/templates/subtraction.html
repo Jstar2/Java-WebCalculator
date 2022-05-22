@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style type="text/css">
+button {
+	transition-duration: 0.4s;
+	color: orange;
+	width: 10%;
+	height: 30px;
+}
+
+button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+	width: 15%;
+}
+
+h1 {
+	position: absolute;
+	top: 0.7cm;
+	left: 40%;
+	font-size: 300%;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Subtraction</title>
+</head>
+<body>
+	<button onclick="window.location.href='/'">Home</button>
+	<h1>Subtraction</h1>
+
+	<form action="subtraction" method="post" class="form-group">
+		<div class="sub" id="sub">
+			<label style="position: absolute; top: 5cm; left: 35%">Enter
+				First Value:</label><input style="position: absolute; top: 5cm; left: 45%"
+				type="number" name="val1" placeholder="here..." required>
+		</div>
+		<div class="sub" id="sub">
+			<label style="position: absolute; top: 6cm; left: 33.6%">Enter
+				Second Value:</label><input style="position: absolute; top: 6cm; left: 45%"
+				type="number" name="val2" placeholder="here..." required>
+		</div>
+		<div class="sub" id="sub">
+			<label style="position: absolute; top: 7cm; left: 41%">
+				Total:</label>
+			<p style="position: absolute; top: 6.6cm; left: 45%" th:text="${sum}"></p>
+		</div>
+		<button class="sub" id="sub"
+			style="position: absolute; top: 8cm; left: 43%" type="submit">Submit</button>
+	</form>
+
+</body>
+</html>

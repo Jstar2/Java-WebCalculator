@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<style type="text/css">
+button {
+	transition-duration: 0.4s;
+	color: orange;
+	width: 10%;
+	height: 30px;
+}
+
+button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+	width: 15%;
+}
+
+h1 {
+	position: absolute;
+	left: 35%;
+	font-size: 300%;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+
+	<h1>Online Calculator</h1>
+
+	<form method="get" action="/division">
+		<button type="submit" style="position: absolute; top: 3cm; left: 18%;">Division</button>
+	</form>
+
+	<form method="get" action="/multiplication">
+		<button type="submit" style="position: absolute; top: 3cm; left: 33%;">Multiplication</button>
+	</form>
+
+	<form method="get" action="/addition">
+		<button type="submit" style="position: absolute; top: 3cm; left: 48%;">Addition</button>
+	</form>
+
+	<form method="get" action="/subtraction">
+		<button type="submit" style="position: absolute; top: 3cm; left: 63%;">Subtraction</button>
+	</form>
+
+
+</body>
+</html>
